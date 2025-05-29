@@ -73,7 +73,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 Step-1 git add .
 Step-2 git commit -m "Fixed login bug and updated UI"
 Step-3 git push
-step-4 git branch -M main
-step-5 git push -u origin main
+if after git push showing an error then go to step -4
+Step-4 git pull origin main --rebase
+Step-5 git push origin main
 
 
