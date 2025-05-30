@@ -8,7 +8,7 @@ const Navigation = () => {
     <nav>
       <div className="container">
         <div className="row">
-          <div className="col-sm-3 navPart1">
+          <div className="col-sm-2 navPart1">
             <Button className="allCartTab align-item-center">
               <span className="icon1 mr-2">
                 <IoIosMenu />
@@ -19,32 +19,35 @@ const Navigation = () => {
               </span>
             </Button>
           </div>
-          <div className="col-sm-9 navPart2 d-flex align-item-center">
+          <div className="col-sm-10 navPart2 d-flex align-item-center">
             <ul className="list list-inline ml-auto">
               <li className="list-inline-item">
-                <Link to="/">Home</Link>
+                <Link to="/"><Button>Home</Button></Link>
               </li>
 
               <li className="list-inline-item">
-                <Link to="/">Fasion</Link>
+                <Link to="/"><Button>Fasion</Button></Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">Electronic</Link>
+                <Link to="/"><Button>Electronic</Button></Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">Bakery</Link>
+                <Link to="/"><Button>Bakery</Button></Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">Grocery</Link>
+                <Link to="/"><Button>Grocery</Button></Link>
               </li>
               <li className="list-inline-item">
-                 <Link to="/">Mobiles</Link>
+                 <Link to="/"><Button>Mobiles</Button></Link>
+               </li>
+               <li className="list-inline-item">
+                 <Link to="/"><Button>About</Button></Link>
                </li>
               <li className="list-inline-item">
-                <Link to="/">Blog</Link>
+                <Link to="/"><Button>Blog</Button></Link>
               </li>
               <li className="list-inline-item">
-                <Link to="/">Contact </Link>
+                <Link to="/"><Button>Contact </Button></Link>
               </li>
             </ul>
           </div>

@@ -11,7 +11,9 @@ body{ font-family: "Lato", sans-serif; font-size: 14px;}
     max-width: 1200px;
   }
 }
-
+::-webkit-scrollbar{width:8px !important; height:8px !important;}
+::-webkit-scrollbar-thumb{background:#ccc !important;}
+::-webkit-scrollbar-track{background:transparent !important;}
 
 .headerWrapper .top-strip{padding :8px 0px; display: flex; justify-content: center;  align-items: center;}
 
@@ -43,18 +45,15 @@ body{ font-family: "Lato", sans-serif; font-size: 14px;}
   font-weight: 700 !important;line-height: 16px;
 }
 
-.headerWrapper .header .part2 .countryDrop span.ml-auto svg{opacity :0.7;}
-header .headerSearch{width:60%; height: 60px; background: #f3f4f7; padding: 5px; position: relative; border-radius: 5px; border: 1px solid rgba(0,0,0,0.1);}
+.headerWrapper .header.part2 .countryDrop span.ml-auto svg{opacity :0.7;}
+ .headerSearch{width:60%; height: 60px; background: #f3f4f7; padding: 5px; position: relative; border-radius: 5px; border: 1px solid rgba(0,0,0,0.1);}
 
-header .headerSearch input{ background: transparent !important; outline: none !important; font-size: 18px;color:rgba(0, 0, 0, 0.8); width:100%; height:45px; border:0px !important;border :0px !important;padding:0px 20px !important;}
-
-header .headerSearch input::-webkit-input-placeholder{color :rgba(0, 0, 0, 0.6);}
-
-header .headerSearch button {
-
+.headerSearch input{ background: transparent !important; outline: none !important; font-size: 18px;color:rgba(0, 0, 0, 0.8); width:100%; height:45px; border:0px !important;border :0px !important;padding:0px 20px !important;}
+.headerSearch input::-webkit-input-placeholder{color :rgba(0, 0, 0, 0.6);}
+.headerSearch button {
   position: absolute;
   top: 0px;
-  right: 15px;
+  right: 10px;
   z-index: 100;
   min-width: 40px !important;
   height: 40px !important;
@@ -63,7 +62,7 @@ header .headerSearch button {
   color:#000;
  
 }
-header .headerSearch button svg{font-size:25px ;}
+.headerSearch button svg{font-size:25px ; opacity:0.8;}
 
 header .part3 .circle{
     align-items: centre; 
@@ -82,7 +81,21 @@ header .part3 .circle svg{font-size: 22px;}
 
 .cartTab button{ background: #fff1ee !important;}
 .cartTab button svg{color:#ea2b0f !important;}
-.cartTab .count{position: absolute; top: -6px; right: -4px; background: #ea2b0f; border-radius: 60%; color: #fff; width: 20px; height: 20px;}
+.cartTab .count{position: absolute; top: -6px; right: -4px; background:rgb(239, 29, 134); border-radius: 60%; color: #fff; width: 20px; height: 20px;}
+
+.locationModal .MuiPaper-elevation{padding:25px; position:relative;}
+
+.locationModal .countryList{margin-bottom:0px; max-height:400px; overflow-y:scroll; overflow-x:hidden;}
+.locationModal .countryList li{width:100%; list-style:none;}
+.locationModal .countryList li button{width:100%; text-transform: capitalize !important; color:#000 !important; justify-content:flex-start !important; padding
+: 10px 20px !important;}
+
+.locationModal .close_{position:absolute; top:10px; right:10px; color:#000 !important; min-width:40px !important; width:40px !important;  height:40px !important; border-radius :50% !important;}
+
+.locationModal .close_svg{font-size:22;}
+
+nav .navPart1{max-width:20%; flex: 0 0 20%;}
+nav .navPart2{max-width:80%; flex: 0 0 80%;}
 
 
 nav .allCartTab{background: #2bbef9; padding:10px 15px !important; border-radius: 30px !important}
@@ -96,7 +109,8 @@ nav .allCartTab .icon1 svg{font-size: 20px !important;}
 nav .allCartTab .icon2 svg{font-size: 15px !important;}
 
 nav .navPart2 ul{margin-bottom: 0px;}
- nav .navPart2 ul li a{font-size: 15px; font-weight: 500; text-decoration: none; color:rgba(0,0,0,0.7); text-transform: uppercase; display: flex; align-items: center;  padding:8px 15.5px; transition: all 0.2s ease-in-out; border-radius :25px;}
+nav .navPart2 ul li a{text-decoration:none;}
+nav .navPart2 ul li a button{font-size: 14px !important; font-weight: 600; text-decoration: none; color:rgba(0,0,0,0.6); text-transform: uppercase; display: flex; align-items: center;  padding:8px 15px; transition: all 0.2s ease-in-out; border-radius :25px;}
 
  nav .navPart2 ul li a svg{font-size:20px;}
 
